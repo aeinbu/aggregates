@@ -1,4 +1,4 @@
-import { maxOf, maxBy, max } from "../src/max-min"
+import { maxOf, maxBy, max } from "../src/"
 const { objectContaining } = expect;
 
 

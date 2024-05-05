@@ -1,4 +1,4 @@
-# @aeinbu/groupby
+# @aeinbu/aggregates
 
 Lightweight and non-intrusive aggregate functions to use with array reducers
 
