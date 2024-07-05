@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*", "src/**/*"
+    "dist/**/*",
+    "src/**/*"
   ],
   "directories": {
     "test": "tests"
@@ -23,9 +24,12 @@
     "url": "git+https://github.com/aeinbu/aggregates.git"
   },
   "keywords": [
-    "minof", "min of",
-    "maxof", "max of",
-    "sumof", "sum of"
+    "minof",
+    "min of",
+    "maxof",
+    "max of",
+    "sumof",
+    "sum of"
   ],
   "author": "Arjan Einbu <arjan@einbu.no>",
   "license": "MIT",
@@ -34,9 +38,9 @@
   },
   "homepage": "https://github.com/aeinbu/aggregates#readme",
   "devDependencies": {
-    "@types/jest": "^27.0.1",
-    "jest": "^27.2.0",
-    "ts-jest": "^27.0.5",
-    "typescript": "^4.4.3"
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.3"
   }
 }

@@ -2,16 +2,17 @@
 Used to get the sum of a property in an array.
 
 For an array of a simple types, use
-[sum](./sum.md) instead.
+[sum](./sum.md#sum) instead.
 
 **Syntax**:  
 `sumBy(valueSelectorFn)`  
 Usage in a reducer:  
-`array.reduce(sum(valueSelectorFn))`
+`array.reduce(sum(valueSelectorFn), defaultValue)`
 
 **Arguments**:  
 - `valueSelectorFn` is a used to extract the value to compare from the object in the array.  
   `valueSelectorFn` is of the form `(obj) => any`
+- `defaultValue` is returned when `array` is empty
 
 
 # sum
@@ -21,10 +22,10 @@ Used to get the sum of all elements in an array.
 **Syntax**:  
 `sum()`  
 Usage in a reducer:  
-`array.reduce(sum())`
+`array.reduce(sum(), defaultValue)`
 
 **Arguments**:  
-*None*
+- `defaultValue` is returned when `array` is empty
 
 
 # Examples
@@ -38,13 +39,13 @@ const testData = [
 ]
 
 testData.reduce(sumOf(x => x.hours), null) // returns 16
-testData.reduce(min(), null) // fails, since it is not a array of simple types
+testData.reduce(sum(), null) // fails, since it is not a array of simple types
 ```
 
 ```javascript
 const testData = [ 10, 30, 20]
 
-testData.reduce(min(), null) // returns 60
+testData.reduce(sum(), null) // returns 60
 ```
 
 **Remarks**:

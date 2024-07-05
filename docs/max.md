@@ -4,24 +4,26 @@ Used to get the element containing the highest property value in an Array
 **Syntax**:  
 `maxBy(valueSelectorFn)`  
 Usage in a reducer:  
-`array.reduce(maxBy(valueSelectorFn))`
+`array.reduce(maxBy(valueSelectorFn), defaultValue)`
 
 **Arguments**:  
 - `valueSelectorFn` is a used to extract the value to compare from the object in the array.  
   `valueSelectorFn` is of the form `(obj) => any`
+- `defaultValue` is returned when `array` is empty
 
 
 # maxOf
 Used to get the highest value of a property in an array.
 
 **Syntax**:  
-`maxOf(valueSelectorFn)`  
+`maxOf(valueSelectorFn)`
 Usage in a reducer:  
-`array.reduce(maxOf(valueSelectorFn))`
+`array.reduce(maxOf(valueSelectorFn), defaultValue)`
 
 **Arguments**:  
 - `valueSelectorFn` is a used to extract the value to compare from the object in the array.  
   `valueSelectorFn` is of the form `(obj) => any`
+- `defaultValue` is returned when `array` is empty
 
 
 # max
@@ -30,10 +32,11 @@ Used to get the highest value in an array. This can only be used with arrays of 
 **Syntax**:  
 `max()`  
 Usage in a reducer:  
-`array.reduce(max())`
+`array.reduce(max(), defaultValue)`
 
 **Arguments**:  
-*None*
+- `defaultValue` is returned when `array` is empty
+
 
 # Examples
 

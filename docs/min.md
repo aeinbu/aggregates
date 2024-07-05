@@ -4,11 +4,12 @@ Used to get the element containing the lowest property value in an Array
 **Syntax**:  
 `minBy(valueSelectorFn)`  
 Usage in a reducer:  
-`array.reduce(minBy(valueSelectorFn))`
+`array.reduce(minBy(valueSelectorFn), defaultValue)`
 
 **Arguments**:  
 - `valueSelectorFn` is a used to extract the value to compare from the object in the array.  
   `valueSelectorFn` is of the form `(obj) => any`
+- `defaultValue` is returned when `array` is empty
 
 
 # minOf
@@ -17,11 +18,13 @@ Used to get the lowest value of a property in an array.
 **Syntax**:  
 `minOf(valueSelectorFn)`  
 Usage in a reducer:  
-`array.reduce(minOf(valueSelectorFn))`
+`array.reduce(minOf(valueSelectorFn), defaultValue)`
 
 **Arguments**:  
 - `valueSelectorFn` is a used to extract the value to compare from the object in the array.  
   `valueSelectorFn` is of the form `(obj) => any`
+- `defaultValue` is returned when `array` is empty
+
 
 
 # min
@@ -30,10 +33,10 @@ Used to get the lowest value in an array. This can only be used with arrays of s
 **Syntax**:  
 `min()`  
 Usage in a reducer:  
-`array.reduce(min())`
+`array.reduce(min(), defaultValue)`
 
-**Arguments**:  
-*None*
+**Arguments**:
+- `defaultValue` is returned when `array` is empty
 
 # Examples
 
