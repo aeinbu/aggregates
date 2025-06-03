@@ -1,6 +1,4 @@
-import { NoValue, SelectorFn } from "./types"
-
-type ComparableType = number | string
+import { ComparableType, NoValue, SelectorFn } from "./types"
 
 
 export function maxBy<TIn>(extract: SelectorFn<TIn, ComparableType>) {

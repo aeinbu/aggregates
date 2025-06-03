@@ -1,7 +1,4 @@
-import { SelectorFn, NoValue } from "./types"
-
-
-type SummableType = number
+import { SelectorFn, NoValue, SummableType } from "./types"
 
 
 export function sumOf<TIn>(extract: SelectorFn<TIn, SummableType>) {
